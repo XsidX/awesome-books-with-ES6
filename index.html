@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script type="module" src="index.js" defer></script>
+    <title>Awesome Books| with ES6</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <a href="/" class="logo">Awesome Books</a>
+        <ul class="nav-items">
+          <li class="nav-links list-book active" data-tab="1">
+            <a href="">List</a>
+          </li>
+          <li class="nav-links add-new" data-tab="2"><a href="">Add new</a></li>
+          <li class="nav-links contact-link" data-tab="3">
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <p class="date"></p>
+    </header>
+    <section
+      id="view-book"
+      class="section section-1 book-list-wrapper display-none display-flex"
+    >
+      <div class="book-list">
+        <h1 class="title">All awesome books</h1>
+        <div class="container"></div>
+      </div>
+    </section>
+    <section
+      id="add-book"
+      class="section section-2 content-container display-none"
+    >
+      <h2>Add a new book</h2>
+      <form action="#" id="form">
+        <input type="text" name="title" id="title" placeholder="Title" />
+
+        <input type="text" name="auhtor" id="author" placeholder="Author" />
+
+        <button type="submit">Add</button>
+      </form>
+    </section>
+    <section
+      id="contact"
+      class="section section-3 content-container display-none"
+    >
+      <div class="contact-container">
+        <h2>Contact information</h2>
+        <p>
+          Do have any questions or you just want to say "Hello"?<br />You can
+          reach out to us!
+        </p>
+        <ul class="contact-info">
+          <li class="contact-info-text">Our e-mail: mail@mail.com</li>
+          <li class="contact-info-text">Our phone number : 0043586534422</li>
+          <li class="contact-info-text">
+            Our address: Streetname 22, 84503 City, Country
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <p class="footer-paragraph">Copyright ...</p>
+    </footer>
+  </body>
+</html>

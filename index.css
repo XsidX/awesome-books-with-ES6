@@ -1,0 +1,307 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 0 5%;
+  min-height: 70vh;
+  border: 2.3px solid #000;
+  padding: 10px;
+}
+
+@media screen and (min-width: 576px) {
+  body {
+    margin: 0 20%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0 35%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.section-1.display-flex {
+  display: block;
+}
+
+.active > a {
+  color: rgb(64, 64, 248);
+}
+
+header {
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 10px;
+  border: 2.3px solid #000;
+}
+
+.nav-bar a {
+  font-weight: 600;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links {
+  padding: 0 5px;
+}
+
+.nav-links > a:hover {
+  color: rgb(64, 64, 248);
+}
+
+.nav-links:nth-child(-n + 2) {
+  border-right: 1px solid;
+}
+
+.date {
+  text-align: right;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.content-container {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 32px;
+}
+
+.alert {
+  padding: 3px 5px;
+  min-width: 60%;
+}
+
+@media screen and (min-width: 576px) {
+  .alert {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .alert {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .alert {
+    width: 80%;
+  }
+}
+
+.error {
+  background-color: rgb(253, 193, 193);
+}
+
+.success {
+  background-color: rgb(76, 243, 76);
+}
+
+.book-list-wrapper {
+  width: 100%;
+  min-height: 100px;
+}
+
+@media screen and (min-width: 576px) {
+  .book-list-wrapper {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .book-list-wrapper {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .book-list-wrapper {
+    width: 80%;
+  }
+}
+
+.book-list .container {
+  border: solid black 1px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container ul {
+  position: relative;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.container ul:nth-child(odd) {
+  background-color: #e6e6fa;
+}
+
+.delete {
+  position: absolute;
+  right: 12px;
+  box-shadow: 2px 2px #000;
+  max-height: 18px;
+  font-size: 11px;
+  color: rgb(61, 61, 61);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.container li {
+  padding: 3px 10px 0 5px;
+  color: rgb(61, 61, 61);
+  font-weight: 600;
+}
+
+.line {
+  margin-top: 20px;
+  height: 1px;
+  width: 60px;
+  background-color: black;
+  box-shadow: 1px 1px #000;
+}
+
+#contact-section {
+  flex-direction: column;
+}
+
+#contact-section h1 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#contact-section p,
+.contact-info-text {
+  color: rgb(29, 29, 29);
+  font-weight: 600;
+}
+
+#contact-section p {
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+#add-book {
+  width: 90%;
+}
+
+@media screen and (min-width: 576px) {
+  #add-book {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #add-book {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #add-book {
+    width: 80%;
+  }
+}
+
+form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  width: 100%;
+}
+
+form input {
+  border: 2.3px solid #000;
+  font-size: 14px;
+  padding: 4px 5px;
+  color: rgb(61, 61, 61);
+  font-weight: 600;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+form input::placeholder {
+  color: rgb(61, 61, 61);
+  font-weight: 600;
+}
+
+form button {
+  min-height: 25px;
+  font-size: 11px;
+  color: rgb(61, 61, 61);
+  font-weight: 600;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+  box-shadow: 2px 2px #000;
+  cursor: pointer;
+  padding: 0 6px;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  margin: 0;
+  right: 5px;
+  left: 5px;
+  border: 2.3px solid #000;
+  padding: 3px;
+  font-weight: 600;
+}
