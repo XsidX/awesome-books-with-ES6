@@ -1,4 +1,5 @@
 import BookStore from './BookStore.js';
+import displayDate from './displayDate.js';
 // class UI
 export default class UI {
   // display books
@@ -8,8 +9,9 @@ export default class UI {
     books.forEach((book) => {
       UI.addBookToUI(book);
     });
-  }
 
+    displayDate();
+  }
   // add book to UI
 
   static addBookToUI(book) {
