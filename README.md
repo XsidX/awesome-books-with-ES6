@@ -9,7 +9,7 @@
 - HTML
 - Javascript
 
-## Live Demo (if available)
+## Live Demo
 
 [Live Demo Link](https://xsidx.github.io/awesome-books-with-ES6/)
 
@@ -23,9 +23,7 @@
 
 ## Install
 
-To install locally run:
-
-- git clone (git@github.com:XsidX/awesome-books-with-ES6.git) in your terminal.
+- To install locally run, _git clone git@github.com:XsidX/awesome-books-with-ES6.git_, in your terminal.
 - open the cloned directory with VSCode
 - install live server extension for VSCode.
 - right click on the index.html file and select open with live server.
@@ -54,7 +52,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
--Microverse module 2, block 2 Awesome books: with ES6 activity/lesson.
+-Microverse module 2, block 2, Awesome books: with ES6 activity/lesson.
 
 ## 📝 License
 
