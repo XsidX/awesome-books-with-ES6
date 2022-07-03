@@ -53,6 +53,11 @@ header {
   width: 100%;
 }
 
+/* .date {
+  color: red;
+  text-transform: lowercase;
+} */
+
 .nav-bar {
   display: flex;
   align-items: center;
