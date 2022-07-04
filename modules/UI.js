@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import BookStore from './BookStore.js';
 import displayDate from './displayDate.js';
 // class UI

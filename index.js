@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import UI from './modules/UI.js';
 import navigationEvent from './modules/navigationEvent.js';
 import addBookEvent from './modules/addBookEvent.js';

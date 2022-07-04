@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import Book from './Book.js';
 import UI from './UI.js';
 import BookStore from './BookStore.js';
